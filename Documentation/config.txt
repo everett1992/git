@@ -2606,6 +2606,11 @@ new default).
 
 --
 
+push.allowLazyForceWithLease::
+	If set to true, allow the `--force-with-lease` option
+	without the expected object name (i.e. expecting the objects
+	at the tip of corresponding remote-tracking branches).
+
 push.followTags::
 	If set to true enable `--follow-tags` option by default.  You
 	may override this configuration at time of push by specifying
