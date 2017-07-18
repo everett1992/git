@@ -158,6 +158,7 @@ static inline uint64_t git_bswap64(uint64_t x)
 
 #define get_be16(p)	ntohs(*(unsigned short *)(p))
 #define get_be32(p)	ntohl(*(unsigned int *)(p))
+#define get_be64(p)	ntohll(*(uint64_t *)(p))
 #define put_be32(p, v)	do { *(unsigned int *)(p) = htonl(v); } while (0)
 
 #else
@@ -185,6 +186,13 @@ static inline void put_be32(void *ptr, uint32_t value)
 	p[1] = value >> 16;
 	p[2] = value >>  8;
 	p[3] = value >>  0;
+}
+
+static inline unit64_t get_be64(const void *ptr)
+{
+	unsigned char *p = ptr;
+	return  ((uint64_t)get_be32(p) << 32) |
+		((uint64_t)get_be32(p + 4);
 }
 
 #endif
