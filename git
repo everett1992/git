@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo -n 'git'
-/usr/bin/git checkout clone
+echo -n 'com'
+/usr/bin/git checkout colon
