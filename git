@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo -n '/usr/bin/git'
+/usr/bin/git checkout clone
