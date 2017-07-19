@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo -n '.'
-/usr/bin/git checkout git2
+echo -n 'git2'
+/usr/bin/git checkout master
