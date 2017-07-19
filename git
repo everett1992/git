@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo -n 'git'
-/usr/bin/git checkout clone
+echo -n '.'
+/usr/bin/git checkout git2
